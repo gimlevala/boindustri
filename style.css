@@ -1,0 +1,111 @@
+body {
+    background-color: #282828;
+    color: #ebdbb2;
+}
+#header {
+    position: sticky;
+    top: -6px;
+    color: tomato;
+    background-color: #383838;
+    margin: -6px;
+    padding: 0;
+    border-bottom: 1px solid #383838;
+}
+
+h1 {
+    text-shadow: 3px 3px 3px #282828;
+}
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #383838;
+
+
+   
+
+}
+
+img.logo {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin:0;
+    padding: 0;
+}
+
+li.nav {
+    float: left;
+    border-right: 1px solid #383838;
+}
+
+
+li a {
+    background-color:#282828;
+    padding: 5px;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+
+a:any-link {
+    color:tomato;
+}
+
+a:hover {
+    background-color: tomato;
+    color: #282828;
+}
+
+
+img.norm {
+    width: 800px;
+    height: 500px;
+    float: right;
+    margin: 15px;
+    padding: 10px;
+}
+
+div.prod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+ul.prod {
+    list-style-type: none;
+}
+
+li.prod {
+    float: left;
+}
+
+div.galleri {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.galleri:hover {
+    border: 1px solid #777;
+  }
+  
+  div.galleri img {
+    width: 100%;
+    height: 200px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+.gpos {
+    display:flow-root;
+    margin-bottom: 10px;
+}
