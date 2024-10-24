@@ -2,6 +2,27 @@ body {
     background-color: #282828;
     color: #ebdbb2;
 }
+
+/*Linker*/
+a:any-link {
+    color:tomato;
+}
+
+a:hover {
+    background-color: tomato;
+    color: #282828;
+}
+
+/*Normalt Bilde*/
+img.norm {
+    width: 800px;
+    height: 500px;
+    float: right;
+    margin: 15px;
+    padding: 10px;
+}
+
+/*Header og navigering*/
 #header {
     position: sticky;
     top: -6px;
@@ -21,10 +42,6 @@ ul.nav {
     padding: 0;
     overflow: hidden;
     background-color: #383838;
-
-
-   
-
 }
 
 img.logo {
@@ -50,49 +67,59 @@ li a {
 
 }
 
+li.dropd {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropd-ting {
+    display: none;
+    position: absolute;
+    background-color: #282828;
+    min-width: 100px;
+    box-shadow: 0px 5px 10px 0px black;
+    z-index: 1;
+  }
+  
+.dropd:hover .dropd-ting {
+    display: block;
+  }
 
-a:any-link {
-    color:tomato;
+.dropd-ting a {
+    color: tomato;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+  }
+.dropd-ting a:hover {
+    color:#282828;
 }
+  
+.dropd-btn {
+    background-color: #282828;
+    color: tomato;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
 
-a:hover {
+.dropd:hover .dropd-btn {
     background-color: tomato;
     color: #282828;
-}
+  }
 
 
-img.norm {
-    width: 800px;
-    height: 500px;
-    float: right;
-    margin: 15px;
-    padding: 10px;
-}
-
-div.prod {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-}
-
-ul.prod {
-    list-style-type: none;
-}
-
-li.prod {
-    float: left;
-}
+/*Produkt Galleri*/
 
 div.galleri {
     margin: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #ff6347;
     float: left;
     width: 180px;
   }
   
   div.galleri:hover {
-    border: 1px solid #777;
+    border: 1px solid #ff7a63;
   }
   
   div.galleri img {
@@ -109,3 +136,4 @@ div.galleri {
     display:flow-root;
     margin-bottom: 10px;
 }
+
